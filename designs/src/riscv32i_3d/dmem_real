@@ -1,0 +1,38 @@
+//integrate 4 dram
+
+module dmem
+(
+    input wire clk,
+    input wire [7:0] writedata,
+    input wire [3:0] ce_mem,
+    input wire [3:0] we_mem,
+
+    input wire [7:0] dataadr,
+
+    output wire [7:0] inter_dmem0,
+    output wire [7:0] inter_dmem1,
+    output wire [7:0] inter_dmem2,
+    output wire [7:0] inter_dmem3
+
+);
+
+    wire [7:0] we_gf0;
+    wire [7:0] we_gf1;
+    wire [7:0] we_gf2;
+    wire [7:0] we_gf3;
+
+    assign we_gf0 = we_mem[0] ? 7'b1 : 7'b0;
+    assign we_gf1 = we_mem[1] ? 7'b1 : 7'b0;
+    assign we_gf2 = we_mem[2] ? 7'b1 : 7'b0;
+    assign we_gf3 = we_mem[3] ? 7'b1 : 7'b0;
+
+
+ gf180mcu_fd_ip_sram__sram256x8m8wm1 dmem00(.CLK (clk), .D (writedata),  .GWEN (ce_mem[0]), .WEN (we_gf0), .Q (inter_dmem0), .A (dataadr[7:0]));
+   
+ gf180mcu_fd_ip_sram__sram256x8m8wm1 dmem01(.CLK (clk), .D (writedata), .GWEN (ce_mem[1]), .WEN (we_gf1), .Q (inter_dmem1), .A (dataadr[15:8]));
+
+ gf180mcu_fd_ip_sram__sram256x8m8wm1 dmem10(.CLK (clk), .D (writedata), .GWEN (ce_mem[2]), .WEN (we_gf2), .Q (inter_dmem2), .A (dataadr[23:16]));
+   
+ gf180mcu_fd_ip_sram__sram256x8m8wm1 dmem11(.CLK (clk), .D (writedata), .GWEN (ce_mem[3]), .WEN (we_gf3), .Q (inter_dmem3), .A (dataadr[31:24]));
+   
+endmodule

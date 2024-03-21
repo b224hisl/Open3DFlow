@@ -1,0 +1,8 @@
+core*
+results/
+logs/
+objects/
+reports/
+
+log
+core

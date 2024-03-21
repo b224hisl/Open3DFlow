@@ -1,0 +1,42 @@
+
+module riscv_top
+(
+  input  wire        clk,
+  input  wire        reset,
+  input  wire [31:0] instr,
+  input  wire        valid,
+  input  wire        valid_reg,
+  // output wire [31:0] writedata,
+  // output wire [31:0] dataadr,
+  output wire        memwrite,
+  output wire        suspend,
+  output wire        ready,
+  output wire [31:0] pc
+);
+
+  wire [3:0] ce_mem;
+  wire [3:0] we_mem;
+
+  wire inter_dmem0;
+  wire inter_dmem1;
+  wire inter_dmem2;
+  wire inter_dmem3;
+
+  wire [7:0] writedata;
+  wire [7:0] dataadr;
+
+
+//integrate 4 dram
+ dmem dmem (.clk(clk), .writedata(writedata), .ce_mem(ce_mem), .we_mem(we_mem),
+            .dataadr(dataadr), .inter_dmem0(inter_dmem0), .inter_dmem1(inter_dmem1),
+            .inter_dmem2(inter_dmem2), .inter_dmem3(inter_dmem3)); 
+
+ core_without_dmem core_without_dmem (.clk(clk), .reset(reset),. instr(instr), 
+                                      .valid(valid), .valid_reg(valid_reg), 
+                                      .writedata(writedata), .dataadr(dataadr),
+                                      .memwrite(memwrite), .suspend(suspend), .ready(ready),
+                                      .pc(pc), .ce_mem(ce_mem), .we_mem(we_mem),
+                                      .inter_dmem0(inter_dmem0), .inter_dmem1(inter_dmem1),
+                                      .inter_dmem2(inter_dmem2), .inter_dmem3(inter_dmem3));
+endmodule
+
