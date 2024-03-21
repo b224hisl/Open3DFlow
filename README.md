@@ -1,6 +1,6 @@
 This project attempts to do 3D IC simulation based on OpenRoad EDA flow
 Detail information can be find in https://github.com/b224hisl/RIOS-code-a-chip-submission
-This work is not completely finished, I will keep updating.
+This work has not been completely finished, I will keep updating.
 
 Author: Yifei Zhu, RIOS Lab, TsingHua University
 Feel free to contact me by
