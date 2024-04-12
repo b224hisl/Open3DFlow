@@ -5,9 +5,9 @@ set height [ord::dbu_to_microns $height]
 set resolution [expr $height / 1000]
 
 # Show the drc markers (if any)
-if {[file exists $::env(REPORTS_DIR)/5_route_drc.rpt] == 1} {
-    gui::load_drc $::env(REPORTS_DIR)/5_route_drc.rpt
-}
+# if {[file exists $::env(REPORTS_DIR)/5_route_drc.rpt] == 1} {
+#     gui::load_drc $::env(REPORTS_DIR)/5_route_drc.rpt
+# }
 
 gui::clear_selections
 
