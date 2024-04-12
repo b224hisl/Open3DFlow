@@ -8,3 +8,6 @@ log
 cal_power.py
 rule.png
 alu.txt
+
+thermal/outputs
+thermal/test.init
