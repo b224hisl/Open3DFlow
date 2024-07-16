@@ -112,3 +112,12 @@ tee -o $::env(REPORTS_DIR)/synth_stat.txt stat {*}$stat_libs
 
 # Write synthesized design
 write_verilog -noattr -noexpr -nohex -nodec $::env(RESULTS_DIR)/1_1_yosys.v
+
+if {[info exists ::env(RENAME_SCRIPT)]} {
+  puts "Renaming Modules"
+  set srcipt "$::env(RENAME_SCRIPT)/genblk_fix.py"
+  set vfile "$::env(RESULTS_DIR)/1_1_yosys.v"
+  set rename [exec python3 $srcipt $vfile]
+  puts $rename
+  exec mv fixed1_1_yosys.v $::env(RESULTS_DIR)/1_1_yosys.v
+} 

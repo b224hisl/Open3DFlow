@@ -1,0 +1,14 @@
+
+# Floorplan close to the Alpha EV6 processor
+# Line Format: <unit-name>\t<width>\t<height>\t<left-x>\t<bottom-y>
+# all dimensions are in meters
+# comment lines begin with a '#'
+# comments and empty lines are ignored
+
+grid1_1	0.001300 	0.000733 	0.000000 	0.001487 
+grid1_2	0.000620 	0.000733 	0.001300 	0.001487 
+grid1_3	0.001300 	0.000733 	0.001920 	0.001487 
+grid1_4	0.001300 	0.001487 	0.000000 	0.000000 
+grid1_4	0.000620 	0.001487 	0.001300 	0.000000 
+grid1_6	0.001300 	0.001487 	0.001920 	0.000000
+

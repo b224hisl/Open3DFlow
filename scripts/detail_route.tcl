@@ -44,7 +44,7 @@ if { [info exists ::env(REPAIR_PDN_VIA_LAYER)]} {
   append additional_args " -repair_pdn_vias $::env(REPAIR_PDN_VIA_LAYER)"
 }
 
-append additional_args " -save_guide_updates -verbose 1"
+append additional_args " -save_guide_updates -verbose 1 "
 
 # DETAILED_ROUTE_ARGS is used when debugging detailed, route, e.g. append
 # "-droute_end_iter 5" to look at routing violations after only 5 iterations,
@@ -69,6 +69,8 @@ set all_args [concat [list \
   $arguments]
 
 puts "detailed_route [join $all_args " "]"
+set_global_routing_layer_adjustment Metal2-Metal3 0.5
+set_global_routing_layer_adjustment Metal4-$::env(MAX_ROUTING_LAYER) 0.25
 
 detailed_route {*}$all_args
 

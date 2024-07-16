@@ -15,6 +15,8 @@ deleteRoutingObstructions
 
 write_def $::env(RESULTS_DIR)/6_final.def
 write_verilog $::env(RESULTS_DIR)/6_final.v
+write_abstract_lef $::env(RESULTS_DIR)/6_final.lef
+write_timing_model $::env(RESULTS_DIR)/6_final.lib
 
 # Run extraction and STA
 if {[info exist ::env(RCX_RULES)]} {

@@ -18,7 +18,7 @@ if {[info exists ::env(FLOORPLAN_DEF)]} {
     puts "Read in Floorplan DEF to initialize floorplan:  $env(FLOORPLAN_DEF)"
     read_def -floorplan_initialize $env(FLOORPLAN_DEF)
 # Initialize floorplan using ICeWall FOOTPRINT
-# ----------------------------------------------------------------------------
+# ---------------------------------------------------------------------------- 
 } elseif {[info exists ::env(FOOTPRINT)]} {
 
   ICeWall load_footprint $env(FOOTPRINT)
@@ -62,6 +62,10 @@ if { [info exists ::env(MAKE_TRACKS)] } {
   make_tracks
 }
 
+# add routing blockage
+if {[info exists ::env(BLOCKAGE_TCL)]} {
+  source $::env(BLOCKAGE_TCL)
+}
 
 if {[info exists ::env(FOOTPRINT_TCL)]} {
   source $::env(FOOTPRINT_TCL)

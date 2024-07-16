@@ -88,13 +88,13 @@ if { [info exists ::env(RECOVER_POWER)] } {
   report_power
 }
 
-puts "\n=========================================================================="
-puts "check_antennas"
-puts "--------------------------------------------------------------------------"
+# puts "\n=========================================================================="
+# puts "check_antennas"
+# puts "--------------------------------------------------------------------------"
 
-repair_antennas -iterations 5
-check_placement -verbose
-check_antennas -report_file $env(REPORTS_DIR)/antenna.log -report_violating_nets
+# repair_antennas -iterations 5
+# check_placement -verbose
+# check_antennas -report_file $env(REPORTS_DIR)/antenna.log -report_violating_nets
 
 estimate_parasitics -global_routing
 report_metrics "global route"

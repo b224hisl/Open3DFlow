@@ -1,5 +1,16 @@
 # ==============================================================================
 # Uncomment or add the design to run
+# export DESIGN_CONFIG=./designs/180_180/riscv32i_3d/config.mk
+# export DESIGN_CONFIG=./designs/gf180/2small/config.mk
+# export DESIGN_CONFIG=./designs/gf180/4small/config.mk
+# export DESIGN_CONFIG=./designs/gf180/L1d/config.mk
+# export DESIGN_CONFIG=./designs/gf180/L1i/config.mk
+
+# export DESIGN_CONFIG=designs/gf180/bottom_die/config.mk
+# export DESIGN_CONFIG=designs/gf180/top_die/config.mk
+
+# export DESIGN_CONFIG=designs/180_180/bottom_die/config.mk
+# export DESIGN_CONFIG=designs/180_180/top_die/config.mk
 # ==============================================================================
 
 # Default TNS_END_PERCENT value
@@ -92,13 +103,13 @@ export SYNTH_ARGS ?= -flatten
 # Global setting for Floorplan
 export PLACE_PINS_ARGS
 
-export FLOW_VARIANT ?= 80MHz
+export FLOW_VARIANT ?= withoutcluster
 export MOTHER_DIR = $(WORK_HOME)/results/$(MOTHER_PDK)/$(MOTHER)/$(FLOW_VARIANT)
 
 export GPL_TIMING_DRIVEN ?= 1
 export GPL_ROUTABILITY_DRIVEN ?= 1
 
-export ENABLE_DPO ?= 1
+export ENABLE_DPO ?= 0
 export DPO_MAX_DISPLACEMENT ?= 5 1
 
 # Setup working directories
@@ -115,10 +126,10 @@ ifeq ($(MAKELEVEL),0)
   $(info [INFO][FLOW] Invoked hierarchical flow.)
   $(foreach block,$(BLOCKS),$(info Block ${block} needs to be hardened.))
 endif
-  $(foreach block,$(BLOCKS),$(eval BLOCK_LEFS += ./designs/gf180sram/${block}.lef))
-  $(foreach block,$(BLOCKS),$(eval BLOCK_LIBS += ./designs/gf180sram/${block}.lib))
-  $(foreach block,$(BLOCKS),$(eval BLOCK_GDS += ./designs/gf180sram/${block}.gds))
-  $(foreach block,$(BLOCKS),$(eval BLOCK_CDL += ./designs/gf180sram/${block}.cdl))
+  $(foreach block,$(BLOCKS),$(eval BLOCK_LEFS += ./designs/$(MACRO_FOLDER)/${block}.lef))
+  $(foreach block,$(BLOCKS),$(eval BLOCK_LIBS += ./designs/$(MACRO_FOLDER)/${block}.lib))
+  $(foreach block,$(BLOCKS),$(eval BLOCK_GDS += ./designs/$(MACRO_FOLDER)/${block}.gds))
+  $(foreach block,$(BLOCKS),$(eval BLOCK_CDL += ./designs/$(MACRO_FOLDER)/${block}.cdl))
   $(foreach block,$(BLOCKS),$(eval BLOCK_LOG_FOLDERS += ./logs/$(PLATFORM)/$(DESIGN_NICKNAME)_$(block)/$(FLOW_VARIANT)/))
   export ADDITIONAL_LEFS += $(BLOCK_LEFS)
   export ADDITIONAL_LIBS += $(BLOCK_LIBS)
@@ -858,7 +869,7 @@ endif
 
 .PHONY: clean_finish
 clean_finish:
-	rm -rf $(RESULTS_DIR)/6_*.gds $(RESULTS_DIR)/6_*.oas $(RESULTS_DIR)/6_*.odb $(RESULTS_DIR)/6_*.v $(RESULTS_DIR)/6_*.def $(RESULTS_DIR)/6_*.sdc $(RESULTS_DIR)/6_*.spef
+	rm -rf $(RESULTS_DIR)/6_*.gds $(RESULTS_DIR)/6_*.oas $(RESULTS_DIR)/6_*.odb $(RESULTS_DIR)/6_*.v $(RESULTS_DIR)/6_*.def $(RESULTS_DIR)/6_*.sdc $(RESULTS_DIR)/6_*.spef $(RESULTS_DIR)/6_*.lef $(RESULTS_DIR)/6_*.lib
 	rm -rf $(REPORTS_DIR)/6_*.rpt
 	rm -f  $(LOG_DIR)/6_*
 

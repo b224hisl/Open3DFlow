@@ -1,4 +1,3 @@
-core*
 results/
 logs/
 objects/
@@ -11,3 +10,6 @@ alu.txt
 
 thermal/outputs
 thermal/test.init
+Thermal_sim/HotSpot
+
+SI/SignalIntegrity-1.4.0

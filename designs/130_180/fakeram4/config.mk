@@ -33,4 +33,4 @@ export MAX_ROUTING_LAYER = Metal3
 export MOTHER = riscv32i_3d
 export MOTHER_PDK = 130_180
 
-export IO_CONSTRAINTS = ./designs/$(MOTHER_PLATFORM)/$(DESIGN_NICKNAME)/pad_placer.tcl
+export IO_CONSTRAINTS = ./designs/$(PLATFORM)/$(DESIGN_NICKNAME)/pad_placer.tcl

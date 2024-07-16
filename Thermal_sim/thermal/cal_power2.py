@@ -1,0 +1,31 @@
+import numpy as np
+g1=125
+g2=201
+g3=12
+g4=129
+g5=202
+g6=93
+g7=63
+g8=80
+g9=50
+
+sum = g1+g2+g3+g4+g5+g6+g7+g8+g9
+total_p = 0.00307
+d1= total_p * g1 / sum
+d2= total_p * g2 / sum
+d3= total_p * g3 / sum
+d4= total_p * g4 / sum + 0.0165
+d5= total_p * g5 / sum
+d6= total_p * g6 / sum + 0.0165
+d7= total_p * g7 / sum + 0.0322
+d8= total_p * g8 / sum 
+d9= total_p * g9 / sum + 0.0322
+print ("d1=",  d1)
+print ("d2=",  d2)
+print ("d3=",  d3)
+print ("d4=",  d4)
+print ("d5=",  d5)
+print ("d6=",  d6)
+print ("d7=",  d7)
+print ("d8=",  d8)
+print ("d9=",  d9)
