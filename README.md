@@ -14,7 +14,7 @@ This project has the distinction of being recognized in the VLSI24 "code-a-chip"
 ![Honorable Mention](doc/code-a-chip.png)
 
 # Open 3D IC Design Flow
-Open3DFlow targets at realizing F2F-stacked 3D processors. It supports the hardening of a 3D CPU configured as the following figure, wherein the top tier functions as a cache die hosting SRAM macros, while the bottom tier incorporates the logical realization of the CPU and other hard macros. The two tiers are stacked F2F, sharing a synchronized clock and maintaining their own power grids. Bonding pads and TSVs transmit their signal and power.
+Open3DFlow targets at realizing F2F-stacked 3D processors. It supports the hardening of a 3D CPU configured as the following figure, wherein the top tier functions as a cache die hosting SRAM macros, while the bottom tier incorporates the logical realization of the CPU and other hard macros. The two tiers are stacked F2F, sharing a synchronized clock and maintaining their power grids. Bonding pads and TSVs transmit their signal and power.
 
 ![3D CPU stacking configuration, where a top cache tier and a bottom logic tier are stacked F2F](doc/two_tier.png)
 
@@ -30,7 +30,7 @@ deciding bonding pads’ locations](doc/step.png)
 ![bottom](doc/bottom.png)
 
 - Temperature distribution maps with maximum temperatures
-of 25.5°C and 25.38°C for the bottom top die respectively:
+of 25.5°C and 25.38°C for the bottom and top dies respectively:
 
 ![top_tem](doc/top_the.png)
 ![bottom_tem](doc/bottom_the.png)
@@ -41,11 +41,11 @@ of 25.5°C and 25.38°C for the bottom top die respectively:
 
 # Recent Advancements
 
-Around June of this year, building upon the success of the award-winning work, I have undertaken significant enhancements to the design. 
+Around June of this year, building on the success of the award-winning work, I undertook significant enhancements to the design. 
 
-But a selection of these improvements has been uploaded, offering an updated glimpse into the progress of the project. 
+However, a selection of these improvements has been uploaded, providing an updated glimpse into the project's progress. 
 
-I sincerely apologize for not adhering to optimal naming conventions and organizing the code and files effectively during the development of Open3DFlow. I am currently engaged in the task of reorganizing my files, tidying up and categorizing the code, and aim to provide a comprehensive and user-friendly set of instructions and scripts that will facilitate reproduction of our work. While this may not be an overly complex task, it is indeed quite meticulous and time-consuming. Rest assured, I will continue to update the detailed instructions on the running process as I progress.
+I sincerely apologize for not adhering to optimal naming conventions and organizing the code and files effectively during the development of Open3DFlow. I am currently engaged in the task of reorganizing my files, tidying up and categorizing the code, and aim to provide a comprehensive and user-friendly set of instructions and scripts that will facilitate the reproduction of our work. While this may not be an overly complex task, it is indeed quite meticulous and time-consuming. Rest assured, I will continue to update the detailed instructions on the running process as I progress.
 
 # Contribute and Collaborate
 
@@ -59,5 +59,7 @@ Feel free to contact me through
  - Mail: b224hisl@yandex.com ; zhuyf20@mails.tsinghua.edu.cn
 
 【20250530】update
-此项目为本人的博士课题，目前有非常多更新还没有传上来，因为其中涉及到和合作方代工厂的合作等，之后会一并脱敏上传。
+This project is part of my doctoral dissertation. It has undergone numerous updates and revisions but has not yet been published, as it contains proprietary data and models developed in collaboration with our manufacturing partner. An anonymized version will be released in the future.
+
+Thank you all so much for your interest! I’ve received many inquiries from other students and researchers, trust me～ and I’m fully committed to delivering this work!
 
