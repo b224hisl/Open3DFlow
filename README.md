@@ -58,3 +58,6 @@ Feel free to contact me through
  - WeChat: b224hislabcd
  - Mail: b224hisl@yandex.com ; zhuyf20@mails.tsinghua.edu.cn
 
+【20250530】update
+此项目为本人的博士课题，目前有非常多更新还没有传上来，因为其中涉及到和合作方代工厂的合作等，之后会一并脱敏上传。
+
