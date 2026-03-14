@@ -89,44 +89,54 @@ Signal integrity analysis is performed by integrating with the SignalIntegrity l
 ![Alt text](images/image-14.png)
 3. DRC‑Clean Top and Bottom Dies
 ![Alt text](images/image-16.png)
-4. GF22 Compatibility Demonstration （For detailed workload and effort, please refer to the paper published in ICCAD. Due to proprietary restrictions, I'm unable to disclose content related to GF22.）
+4. GF22 Compatibility Demonstration （For detailed workload and effort, please refer to the paper published in ICCAD. Due to proprietary restrictions, I'm unable to disclose content related to GF22）
+
 ![Alt text](images/image-17.png)
+
 5. Thermal Simulation Results
+
 ![Alt text](images/image-18.png)
+
 6. Signal Integrity Simulation Results
+
 ![Alt text](images/image-19.png)
 
 ## Open3DFlow3.0: 3D SiP Project (ungoing)
 Due to a NDA with our collaborating packaging vendor, certain project-specific details, models, and parameters cannot be publicly disclosed at this time.
 
 Within this engineering project, Open3DFlow serves as a unified platform that integrates both simulation and physical implementation, bridging the gap between design exploration and tape-out readiness.
+
 ![Alt text](images/onging/image.png)
 
 ### Target Chip Configuration
+
 ![Alt text](images/onging/image-2.png)
 
 ### Results Showcase
 1. For Prerequisite Setup
 
-    a) Cacluator for line width 
+    a) Cacluator for line width
+
     ![Alt text](images/onging/image-1.png)
 
     b) Netlist import
 
 2. SI simulation for crosstalk
+
 ![Alt text](images/onging/image-3.png)
 ![Alt text](images/onging/image-4.png)
 ![Alt text](images/onging/image-5.png)
 
 stack up:
+
 ![Alt text](images/onging/image-6.png)
 
 ![Alt text](images/onging/image-8.png)
 
-3. breef-up
+3. beef-up
 
-![Alt text](image-9.png)
-![Alt text](image-10.png)
+![Alt text](images/onging/image-9.png)
+![Alt text](images/onging/image-10.png)
 
 # Contribute and Collaborate
 We welcome contributions from the community! Whether it's bug reports, feature requests, or even code contributions, your input is invaluable to the growth and success of this project. Feel free to open issues or submit pull requests on GitHub
