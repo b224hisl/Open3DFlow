@@ -79,14 +79,18 @@ Open3DFlow interfaces with HotSpot to perform thermal analysis. Power maps are g
 
 ### Signal Integrity Simulation
 Signal integrity analysis is performed by integrating with the SignalIntegrity library. Eye diagrams are generated to evaluate signal quality under various operating frequencies.
+
 ![Alt text](images/image-13.png)
 
 ### Results Showcase
 1. TSV Placement Sites
+
 ![Alt text](images/image-15.png)
 2. IR Drop Analysis with TSV Power Delivery
+
 ![Alt text](images/image-14.png)
 3. DRC‑Clean Top and Bottom Dies
+
 ![Alt text](images/image-16.png)
 4. GF22 Compatibility Demonstration （For detailed workload and effort, please refer to the paper published in ICCAD. Due to proprietary restrictions, I'm unable to disclose content related to GF22）
 
@@ -114,7 +118,7 @@ Within this engineering project, Open3DFlow serves as a unified platform that in
 ### Results Showcase
 1. For Prerequisite Setup
 
-    a) Cacluator for line width
+    a) Impedance Matching
 
     ![Alt text](images/onging/image-1.png)
 
@@ -123,8 +127,6 @@ Within this engineering project, Open3DFlow serves as a unified platform that in
 2. SI simulation for crosstalk
 
 ![Alt text](images/onging/image-3.png)
-![Alt text](images/onging/image-4.png)
-![Alt text](images/onging/image-5.png)
 
 stack up:
 
