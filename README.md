@@ -1,4 +1,3 @@
-# OVERVIEW
 ![Open3DFlow Logo](images/logo.png)
 
 # Foreword
