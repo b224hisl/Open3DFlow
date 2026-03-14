@@ -125,3 +125,15 @@ stack up:
 
 ![Alt text](image-9.png)
 ![Alt text](image-10.png)
+
+# Contribute and Collaborate
+We welcome contributions from the community! Whether it's bug reports, feature requests, or even code contributions, your input is invaluable to the growth and success of this project. Feel free to open issues or submit pull requests on GitHub
+
+# Acknowledge
+I would like to express my sincere gratitude to **Tsinghua University**, and **RIOS Lab** and our packaging partners for their tremendous support of my project.
+
+I am especially thankful to my advisor, **Professor Zhangxi Tan**, for his timely guidance and for providing the resources essential to this work.
+
+The academic journey is indeed full of challenges. To all the students reading this: stay strong, stay positive, and may you complete your studies with joy!!!
+
+If you ever face any difficulties, feel free to reach out to me. I really understand—because I’ve been through the rain myself—and I hope to hold an umbrella for you too. :)❤❤
