@@ -1,0 +1,671 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+UNITS
+    DATABASE MICRONS 2000 ;
+END UNITS
+
+MACRO ddr
+  FOREIGN ddr 0 0 ;
+  CLASS BLOCK ;
+  SIZE 10000 BY 11000 ;
+  PIN A1
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  750 10050 1250 10550 ;
+    END
+  END A1
+  PIN A10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 10050 8450 10550 ;
+    END
+  END A10
+  PIN A11
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  8750 10050 9250 10550 ;
+    END
+  END A11
+  PIN A2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 10050 2050 10550 ;
+    END
+  END A2
+  PIN A3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 10050 2850 10550 ;
+    END
+  END A3
+  PIN A4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 10050 3650 10550 ;
+    END
+  END A4
+  PIN A8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 10050 6850 10550 ;
+    END
+  END A8
+  PIN A9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 10050 7650 10550 ;
+    END
+  END A9
+  PIN B10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 9250 8450 9750 ;
+    END
+  END B10
+  PIN B2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 9250 2050 9750 ;
+    END
+  END B2
+  PIN B3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 9250 2850 9750 ;
+    END
+  END B3
+  PIN B4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 9250 3650 9750 ;
+    END
+  END B4
+  PIN B8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 9250 6850 9750 ;
+    END
+  END B8
+  PIN B9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 9250 7650 9750 ;
+    END
+  END B9
+  PIN C10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 8450 8450 8950 ;
+    END
+  END C10
+  PIN C2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 8450 2050 8950 ;
+    END
+  END C2
+  PIN C3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 8450 2850 8950 ;
+    END
+  END C3
+  PIN C4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 8450 3650 8950 ;
+    END
+  END C4
+  PIN C8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 8450 6850 8950 ;
+    END
+  END C8
+  PIN C9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 8450 7650 8950 ;
+    END
+  END C9
+  PIN D10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 7650 8450 8150 ;
+    END
+  END D10
+  PIN D2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 7650 2050 8150 ;
+    END
+  END D2
+  PIN D3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 7650 2850 8150 ;
+    END
+  END D3
+  PIN D4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 7650 3650 8150 ;
+    END
+  END D4
+  PIN D8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 7650 6850 8150 ;
+    END
+  END D8
+  PIN D9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 7650 7650 8150 ;
+    END
+  END D9
+  PIN E10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 6850 8450 7350 ;
+    END
+  END E10
+  PIN E2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 6850 2050 7350 ;
+    END
+  END E2
+  PIN E3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 6850 2850 7350 ;
+    END
+  END E3
+  PIN E4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 6850 3650 7350 ;
+    END
+  END E4
+  PIN E8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 6850 6850 7350 ;
+    END
+  END E8
+  PIN E9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 6850 7650 7350 ;
+    END
+  END E9
+  PIN F10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 6050 8450 6550 ;
+    END
+  END F10
+  PIN F2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 6050 2050 6550 ;
+    END
+  END F2
+  PIN F3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 6050 2850 6550 ;
+    END
+  END F3
+  PIN F4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 6050 3650 6550 ;
+    END
+  END F4
+  PIN F8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 6050 6850 6550 ;
+    END
+  END F8
+  PIN F9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 6050 7650 6550 ;
+    END
+  END F9
+  PIN G10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 5250 8450 5750 ;
+    END
+  END G10
+  PIN G2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 5250 2050 5750 ;
+    END
+  END G2
+  PIN G3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 5250 2850 5750 ;
+    END
+  END G3
+  PIN G4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 5250 3650 5750 ;
+    END
+  END G4
+  PIN G8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 5250 6850 5750 ;
+    END
+  END G8
+  PIN G9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 5250 7650 5750 ;
+    END
+  END G9
+  PIN H10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 4450 8450 4950 ;
+    END
+  END H10
+  PIN H2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 4450 2050 4950 ;
+    END
+  END H2
+  PIN H3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 4450 2850 4950 ;
+    END
+  END H3
+  PIN H4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 4450 3650 4950 ;
+    END
+  END H4
+  PIN H8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 4450 6850 4950 ;
+    END
+  END H8
+  PIN H9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 4450 7650 4950 ;
+    END
+  END H9
+  PIN J10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 3650 8450 4150 ;
+    END
+  END J10
+  PIN J2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 3650 2050 4150 ;
+    END
+  END J2
+  PIN J3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 3650 2850 4150 ;
+    END
+  END J3
+  PIN J4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 3650 3650 4150 ;
+    END
+  END J4
+  PIN J8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 3650 6850 4150 ;
+    END
+  END J8
+  PIN J9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 3650 7650 4150 ;
+    END
+  END J9
+  PIN K10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 2850 8450 3350 ;
+    END
+  END K10
+  PIN K2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 2850 2050 3350 ;
+    END
+  END K2
+  PIN K3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 2850 2850 3350 ;
+    END
+  END K3
+  PIN K4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 2850 3650 3350 ;
+    END
+  END K4
+  PIN K8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 2850 6850 3350 ;
+    END
+  END K8
+  PIN K9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 2850 7650 3350 ;
+    END
+  END K9
+  PIN L10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 2050 8450 2550 ;
+    END
+  END L10
+  PIN L2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 2050 2050 2550 ;
+    END
+  END L2
+  PIN L3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 2050 2850 2550 ;
+    END
+  END L3
+  PIN L4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 2050 3650 2550 ;
+    END
+  END L4
+  PIN L8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 2050 6850 2550 ;
+    END
+  END L8
+  PIN L9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 2050 7650 2550 ;
+    END
+  END L9
+  PIN M10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 1250 8450 1750 ;
+    END
+  END M10
+  PIN M2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 1250 2050 1750 ;
+    END
+  END M2
+  PIN M3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 1250 2850 1750 ;
+    END
+  END M3
+  PIN M4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 1250 3650 1750 ;
+    END
+  END M4
+  PIN M8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 1250 6850 1750 ;
+    END
+  END M8
+  PIN M9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 1250 7650 1750 ;
+    END
+  END M9
+  PIN N1
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  750 450 1250 950 ;
+    END
+  END N1
+  PIN N10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950 450 8450 950 ;
+    END
+  END N10
+  PIN N11
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  8750 450 9250 950 ;
+    END
+  END N11
+  PIN N2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550 450 2050 950 ;
+    END
+  END N2
+  PIN N3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350 450 2850 950 ;
+    END
+  END N3
+  PIN N4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150 450 3650 950 ;
+    END
+  END N4
+  PIN N8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350 450 6850 950 ;
+    END
+  END N8
+  PIN N9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150 450 7650 950 ;
+    END
+  END N9
+  OBS
+  END
+END ddr
+END LIBRARY

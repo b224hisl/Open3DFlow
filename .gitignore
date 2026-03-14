@@ -13,3 +13,17 @@ thermal/test.init
 Thermal_sim/HotSpot
 
 SI/SignalIntegrity-1.4.0
+run.sh
+timingmodel.dll
+DQ_read.ibs
+DQ_write.ibs
+CA.ibi
+CA_AMI.ibs
+*.s32p
+*.s48p
+*.rule
+*.json
+*.dll
+*.material
+*.dc
+*.lcf

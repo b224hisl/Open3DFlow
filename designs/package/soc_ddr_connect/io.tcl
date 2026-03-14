@@ -1,0 +1,1 @@
+puts "for package usage. no io placed, for inside chiplet connection"

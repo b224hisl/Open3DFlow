@@ -1,0 +1,2 @@
+current_design soc_ddr
+set_dont_touch u_soc

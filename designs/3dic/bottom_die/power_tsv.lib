@@ -1,0 +1,21 @@
+  cell(tsv) {
+    area : 914.457600 ;
+
+    leakage_power() {
+      related_pg_pin : "VDD" ;
+      value : "9.33185e-05" ;
+    }
+
+    pg_pin(VDD) {
+      voltage_name : VDD ;
+      pg_type : primary_power ;
+      capacitance : 0.005585 ;
+    }
+
+    pg_pin(VSS) {
+      voltage_name : VSS ;
+      pg_type : primary_ground ;
+      capacitance : 0.005585 ;
+    }
+
+  }

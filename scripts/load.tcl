@@ -1,36 +1,47 @@
-proc load_design {design_file sdc_file msg} {
-  if {![info exists standalone] || $standalone} {
-    # Read liberty files
-    source $::env(SCRIPTS_DIR)/read_liberty.tcl
+source $::env(SCRIPTS_DIR)/util.tcl
 
-    # Read design files
-    set ext [file extension $design_file]
-    if {$ext == ".v"} {
-      read_lef $::env(TECH_LEF)
-      read_lef $::env(SC_LEF)
-      if {[info exist ::env(ADDITIONAL_LEFS)]} {
-        foreach lef $::env(ADDITIONAL_LEFS) {
-          read_lef $lef
-        }
-      }
-      read_verilog $::env(RESULTS_DIR)/$design_file
-      link_design $::env(DESIGN_NAME)
-    } elseif {$ext == ".odb"} {
-      read_db $::env(RESULTS_DIR)/$design_file
-    } else {
-      error "Unrecognized input file $design_file"
-    }
+source $::env(SCRIPTS_DIR)/report_metrics.tcl
 
-    # Read SDC file
-    read_sdc $::env(RESULTS_DIR)/$sdc_file
+# Temporarily disable sta's threading due to random failures
+sta::set_thread_count 1
 
-    if [file exists $::env(PLATFORM_DIR)/derate.tcl] {
-      source $::env(PLATFORM_DIR)/derate.tcl
-    }
+proc load_design {design_file sdc_file} {
+  # Read liberty files
+  source $::env(SCRIPTS_DIR)/read_liberty.tcl
 
-    source $::env(PLATFORM_DIR)/setRC.tcl
+  # Read design files
+  set ext [file extension $design_file]
+  if {$ext == ".v"} {
+    read_lef $::env(TECH_LEF)
+    if {[info exist ::env(PACKAGE)]} {
+      foreach lef $::env(ADDITIONAL_LEFS) {
+        read_lef $lef} 
+        } else {
+          read_lef $::env(SC_LEF)
+          if {[info exist ::env(ADDITIONAL_LEFS)]} {
+            foreach lef $::env(ADDITIONAL_LEFS) {
+                read_lef $lef }
+        }}
+    read_verilog $::env(RESULTS_DIR)/$design_file
+    link_design $::env(DESIGN_NAME)
+  } elseif {$ext == ".odb"} {
+    read_db $::env(RESULTS_DIR)/$design_file
   } else {
-    puts $msg
+    error "Unrecognized input file $design_file"
+  }
+
+  # Read SDC file
+  read_sdc $::env(RESULTS_DIR)/$sdc_file
+
+  if [file exists $::env(PLATFORM_DIR)/derate.tcl] {
+    source $::env(PLATFORM_DIR)/derate.tcl
+  }
+
+  source $::env(PLATFORM_DIR)/setRC.tcl
+
+  if { [env_var_equals LIB_MODEL CCS] } {
+    puts "Using CCS delay calculation"
+    set_delay_calculator prima
   }
 }
 
@@ -43,13 +54,13 @@ proc get_verilog_cells_for_design { } {
 }
 
 proc write_eqy_verilog {filename} {
-    # Filter out cells with no verilog/not needed for equivalence such
-    # as fillers and tap cells 
-    if {[info exist ::env(REMOVE_CELLS_FOR_EQY)]} {
-	write_verilog -remove_cells $::env(REMOVE_CELLS_FOR_EQY) $::env(RESULTS_DIR)/$filename
-    } else {
-	write_verilog  $::env(RESULTS_DIR)/$filename
-    }
+  # Filter out cells with no verilog/not needed for equivalence such
+  # as fillers and tap cells
+  if {[env_var_exists_and_non_empty REMOVE_CELLS_FOR_EQY]} {
+    write_verilog -remove_cells $::env(REMOVE_CELLS_FOR_EQY) $::env(RESULTS_DIR)/$filename
+  } else {
+    write_verilog  $::env(RESULTS_DIR)/$filename
+  }
 }
 
 proc write_eqy_script_for_sky130hd {} {
@@ -106,8 +117,11 @@ proc run_equivalence_test {} {
     write_eqy_verilog 4_after_rsz.v
     write_eqy_script
 
-    file delete -force $::env(LOG_DIR)/4_eqy_output
-    eval exec eqy -d $::env(LOG_DIR)/4_eqy_output $::env(OBJECTS_DIR)/4_eqy_test.eqy > $::env(LOG_DIR)/4_equivalence_check.log
+    eval exec eqy -d $::env(LOG_DIR)/4_eqy_output \
+        --force \
+        --jobs $::env(NUM_CORES) \
+        $::env(OBJECTS_DIR)/4_eqy_test.eqy \
+        > $::env(LOG_DIR)/4_equivalence_check.log
     set count [exec grep -c "Successfully proved designs equivalent" $::env(LOG_DIR)/4_equivalence_check.log]
     if { $count == 0 } {
       error "Repair timing output failed equivalence test"
@@ -115,4 +129,3 @@ proc run_equivalence_test {} {
       puts "Repair timing output passed equivalence test"
     }
 }
-#===========================================================================================

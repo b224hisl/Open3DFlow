@@ -1,13 +1,11 @@
 source $::env(SCRIPTS_DIR)/load.tcl
-load_design 2_5_floorplan_tapcell.odb 1_synth.sdc "Starting PDN generation"
-puts "Starting PDN generation"
+erase_non_stage_variables floorplan
+load_design 2_5_floorplan_tapcell.odb 2_floorplan.sdc
 
 source $::env(PDN_TCL)
 pdngen
-write_def $::env(RESULTS_DIR)/2_6_floorplan_pdn.def
-puts "Starting PDN generation"
 
-if { [info exists ::env(POST_PDN_TCL)] && [file exists $::env(POST_PDN_TCL)] } {
+if { [env_var_exists_and_non_empty POST_PDN_TCL] } {
   source $::env(POST_PDN_TCL)
 }
 
@@ -22,9 +20,5 @@ foreach net [$block getNets] {
     }
 }
 
-if {![info exists save_checkpoint] || $save_checkpoint} {
-  if {[info exists ::env(GALLERY_REPORT)]  && $::env(GALLERY_REPORT) != 0} {
-    write_def $::env(RESULTS_DIR)/2_floorplan.def
-  }
-  write_db $::env(RESULTS_DIR)/2_6_floorplan_pdn.odb
-}
+write_db $::env(RESULTS_DIR)/2_6_floorplan_pdn.odb
+write_verilog $::env(RESULTS_DIR)/2_floorplan.v

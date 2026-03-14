@@ -1,0 +1,1327 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+UNITS
+    DATABASE MICRONS 2000 ;
+END UNITS
+
+MACRO ddr
+  FOREIGN ddr 0 0 ;
+  CLASS BLOCK ;
+  SIZE 10000 BY 11000 ;
+  PIN A1
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  750.0 10050.0 1250.0 10550.0 ;
+      LAYER L3_v ;
+        RECT  750.0 10050.0 1250.0 10550.0 ;
+      LAYER L3_h ;
+        RECT  750.0 10050.0 1250.0 10550.0 ;
+      LAYER L5_v ;
+        RECT  750.0 10050.0 1250.0 10550.0 ;
+      LAYER L5_h ;
+        RECT  750.0 10050.0 1250.0 10550.0 ;
+    END
+  END A1
+  PIN A10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 10050.0 8450.0 10550.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 10050.0 8450.0 10550.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 10050.0 8450.0 10550.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 10050.0 8450.0 10550.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 10050.0 8450.0 10550.0 ;
+    END
+  END A10
+  PIN A11
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  8750.0 10050.0 9250.0 10550.0 ;
+      LAYER L3_v ;
+        RECT  8750.0 10050.0 9250.0 10550.0 ;
+      LAYER L3_h ;
+        RECT  8750.0 10050.0 9250.0 10550.0 ;
+      LAYER L5_v ;
+        RECT  8750.0 10050.0 9250.0 10550.0 ;
+      LAYER L5_h ;
+        RECT  8750.0 10050.0 9250.0 10550.0 ;
+    END
+  END A11
+  PIN A2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 10050.0 2050.0 10550.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 10050.0 2050.0 10550.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 10050.0 2050.0 10550.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 10050.0 2050.0 10550.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 10050.0 2050.0 10550.0 ;
+    END
+  END A2
+  PIN A3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 10050.0 2850.0 10550.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 10050.0 2850.0 10550.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 10050.0 2850.0 10550.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 10050.0 2850.0 10550.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 10050.0 2850.0 10550.0 ;
+    END
+  END A3
+  PIN A4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 10050.0 3650.0 10550.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 10050.0 3650.0 10550.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 10050.0 3650.0 10550.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 10050.0 3650.0 10550.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 10050.0 3650.0 10550.0 ;
+    END
+  END A4
+  PIN A8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 10050.0 6850.0 10550.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 10050.0 6850.0 10550.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 10050.0 6850.0 10550.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 10050.0 6850.0 10550.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 10050.0 6850.0 10550.0 ;
+    END
+  END A8
+  PIN A9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 10050.0 7650.0 10550.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 10050.0 7650.0 10550.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 10050.0 7650.0 10550.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 10050.0 7650.0 10550.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 10050.0 7650.0 10550.0 ;
+    END
+  END A9
+  PIN B10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 9250.0 8450.0 9750.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 9250.0 8450.0 9750.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 9250.0 8450.0 9750.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 9250.0 8450.0 9750.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 9250.0 8450.0 9750.0 ;
+    END
+  END B10
+  PIN B2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 9250.0 2050.0 9750.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 9250.0 2050.0 9750.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 9250.0 2050.0 9750.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 9250.0 2050.0 9750.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 9250.0 2050.0 9750.0 ;
+    END
+  END B2
+  PIN B3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 9250.0 2850.0 9750.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 9250.0 2850.0 9750.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 9250.0 2850.0 9750.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 9250.0 2850.0 9750.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 9250.0 2850.0 9750.0 ;
+    END
+  END B3
+  PIN B4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 9250.0 3650.0 9750.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 9250.0 3650.0 9750.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 9250.0 3650.0 9750.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 9250.0 3650.0 9750.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 9250.0 3650.0 9750.0 ;
+    END
+  END B4
+  PIN B8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 9250.0 6850.0 9750.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 9250.0 6850.0 9750.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 9250.0 6850.0 9750.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 9250.0 6850.0 9750.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 9250.0 6850.0 9750.0 ;
+    END
+  END B8
+  PIN B9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 9250.0 7650.0 9750.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 9250.0 7650.0 9750.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 9250.0 7650.0 9750.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 9250.0 7650.0 9750.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 9250.0 7650.0 9750.0 ;
+    END
+  END B9
+  PIN C10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 8450.0 8450.0 8950.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 8450.0 8450.0 8950.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 8450.0 8450.0 8950.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 8450.0 8450.0 8950.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 8450.0 8450.0 8950.0 ;
+    END
+  END C10
+  PIN C2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 8450.0 2050.0 8950.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 8450.0 2050.0 8950.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 8450.0 2050.0 8950.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 8450.0 2050.0 8950.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 8450.0 2050.0 8950.0 ;
+    END
+  END C2
+  PIN C3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 8450.0 2850.0 8950.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 8450.0 2850.0 8950.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 8450.0 2850.0 8950.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 8450.0 2850.0 8950.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 8450.0 2850.0 8950.0 ;
+    END
+  END C3
+  PIN C4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 8450.0 3650.0 8950.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 8450.0 3650.0 8950.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 8450.0 3650.0 8950.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 8450.0 3650.0 8950.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 8450.0 3650.0 8950.0 ;
+    END
+  END C4
+  PIN C8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 8450.0 6850.0 8950.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 8450.0 6850.0 8950.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 8450.0 6850.0 8950.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 8450.0 6850.0 8950.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 8450.0 6850.0 8950.0 ;
+    END
+  END C8
+  PIN C9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 8450.0 7650.0 8950.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 8450.0 7650.0 8950.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 8450.0 7650.0 8950.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 8450.0 7650.0 8950.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 8450.0 7650.0 8950.0 ;
+    END
+  END C9
+  PIN D10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 7650.0 8450.0 8150.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 7650.0 8450.0 8150.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 7650.0 8450.0 8150.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 7650.0 8450.0 8150.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 7650.0 8450.0 8150.0 ;
+    END
+  END D10
+  PIN D2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 7650.0 2050.0 8150.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 7650.0 2050.0 8150.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 7650.0 2050.0 8150.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 7650.0 2050.0 8150.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 7650.0 2050.0 8150.0 ;
+    END
+  END D2
+  PIN D3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 7650.0 2850.0 8150.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 7650.0 2850.0 8150.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 7650.0 2850.0 8150.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 7650.0 2850.0 8150.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 7650.0 2850.0 8150.0 ;
+    END
+  END D3
+  PIN D4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 7650.0 3650.0 8150.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 7650.0 3650.0 8150.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 7650.0 3650.0 8150.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 7650.0 3650.0 8150.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 7650.0 3650.0 8150.0 ;
+    END
+  END D4
+  PIN D8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 7650.0 6850.0 8150.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 7650.0 6850.0 8150.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 7650.0 6850.0 8150.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 7650.0 6850.0 8150.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 7650.0 6850.0 8150.0 ;
+    END
+  END D8
+  PIN D9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 7650.0 7650.0 8150.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 7650.0 7650.0 8150.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 7650.0 7650.0 8150.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 7650.0 7650.0 8150.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 7650.0 7650.0 8150.0 ;
+    END
+  END D9
+  PIN E10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 6850.0 8450.0 7350.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 6850.0 8450.0 7350.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 6850.0 8450.0 7350.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 6850.0 8450.0 7350.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 6850.0 8450.0 7350.0 ;
+    END
+  END E10
+  PIN E2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 6850.0 2050.0 7350.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 6850.0 2050.0 7350.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 6850.0 2050.0 7350.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 6850.0 2050.0 7350.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 6850.0 2050.0 7350.0 ;
+    END
+  END E2
+  PIN E3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 6850.0 2850.0 7350.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 6850.0 2850.0 7350.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 6850.0 2850.0 7350.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 6850.0 2850.0 7350.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 6850.0 2850.0 7350.0 ;
+    END
+  END E3
+  PIN E4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 6850.0 3650.0 7350.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 6850.0 3650.0 7350.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 6850.0 3650.0 7350.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 6850.0 3650.0 7350.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 6850.0 3650.0 7350.0 ;
+    END
+  END E4
+  PIN E8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 6850.0 6850.0 7350.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 6850.0 6850.0 7350.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 6850.0 6850.0 7350.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 6850.0 6850.0 7350.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 6850.0 6850.0 7350.0 ;
+    END
+  END E8
+  PIN E9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 6850.0 7650.0 7350.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 6850.0 7650.0 7350.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 6850.0 7650.0 7350.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 6850.0 7650.0 7350.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 6850.0 7650.0 7350.0 ;
+    END
+  END E9
+  PIN F10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 6050.0 8450.0 6550.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 6050.0 8450.0 6550.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 6050.0 8450.0 6550.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 6050.0 8450.0 6550.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 6050.0 8450.0 6550.0 ;
+    END
+  END F10
+  PIN F2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 6050.0 2050.0 6550.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 6050.0 2050.0 6550.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 6050.0 2050.0 6550.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 6050.0 2050.0 6550.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 6050.0 2050.0 6550.0 ;
+    END
+  END F2
+  PIN F3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 6050.0 2850.0 6550.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 6050.0 2850.0 6550.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 6050.0 2850.0 6550.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 6050.0 2850.0 6550.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 6050.0 2850.0 6550.0 ;
+    END
+  END F3
+  PIN F4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 6050.0 3650.0 6550.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 6050.0 3650.0 6550.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 6050.0 3650.0 6550.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 6050.0 3650.0 6550.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 6050.0 3650.0 6550.0 ;
+    END
+  END F4
+  PIN F8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 6050.0 6850.0 6550.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 6050.0 6850.0 6550.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 6050.0 6850.0 6550.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 6050.0 6850.0 6550.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 6050.0 6850.0 6550.0 ;
+    END
+  END F8
+  PIN F9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 6050.0 7650.0 6550.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 6050.0 7650.0 6550.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 6050.0 7650.0 6550.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 6050.0 7650.0 6550.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 6050.0 7650.0 6550.0 ;
+    END
+  END F9
+  PIN G10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 5250.0 8450.0 5750.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 5250.0 8450.0 5750.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 5250.0 8450.0 5750.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 5250.0 8450.0 5750.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 5250.0 8450.0 5750.0 ;
+    END
+  END G10
+  PIN G2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 5250.0 2050.0 5750.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 5250.0 2050.0 5750.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 5250.0 2050.0 5750.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 5250.0 2050.0 5750.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 5250.0 2050.0 5750.0 ;
+    END
+  END G2
+  PIN G3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 5250.0 2850.0 5750.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 5250.0 2850.0 5750.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 5250.0 2850.0 5750.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 5250.0 2850.0 5750.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 5250.0 2850.0 5750.0 ;
+    END
+  END G3
+  PIN G4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 5250.0 3650.0 5750.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 5250.0 3650.0 5750.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 5250.0 3650.0 5750.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 5250.0 3650.0 5750.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 5250.0 3650.0 5750.0 ;
+    END
+  END G4
+  PIN G8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 5250.0 6850.0 5750.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 5250.0 6850.0 5750.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 5250.0 6850.0 5750.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 5250.0 6850.0 5750.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 5250.0 6850.0 5750.0 ;
+    END
+  END G8
+  PIN G9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 5250.0 7650.0 5750.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 5250.0 7650.0 5750.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 5250.0 7650.0 5750.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 5250.0 7650.0 5750.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 5250.0 7650.0 5750.0 ;
+    END
+  END G9
+  PIN H10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 4450.0 8450.0 4950.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 4450.0 8450.0 4950.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 4450.0 8450.0 4950.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 4450.0 8450.0 4950.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 4450.0 8450.0 4950.0 ;
+    END
+  END H10
+  PIN H2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 4450.0 2050.0 4950.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 4450.0 2050.0 4950.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 4450.0 2050.0 4950.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 4450.0 2050.0 4950.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 4450.0 2050.0 4950.0 ;
+    END
+  END H2
+  PIN H3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 4450.0 2850.0 4950.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 4450.0 2850.0 4950.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 4450.0 2850.0 4950.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 4450.0 2850.0 4950.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 4450.0 2850.0 4950.0 ;
+    END
+  END H3
+  PIN H4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 4450.0 3650.0 4950.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 4450.0 3650.0 4950.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 4450.0 3650.0 4950.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 4450.0 3650.0 4950.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 4450.0 3650.0 4950.0 ;
+    END
+  END H4
+  PIN H8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 4450.0 6850.0 4950.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 4450.0 6850.0 4950.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 4450.0 6850.0 4950.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 4450.0 6850.0 4950.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 4450.0 6850.0 4950.0 ;
+    END
+  END H8
+  PIN H9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 4450.0 7650.0 4950.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 4450.0 7650.0 4950.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 4450.0 7650.0 4950.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 4450.0 7650.0 4950.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 4450.0 7650.0 4950.0 ;
+    END
+  END H9
+  PIN J10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 3650.0 8450.0 4150.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 3650.0 8450.0 4150.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 3650.0 8450.0 4150.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 3650.0 8450.0 4150.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 3650.0 8450.0 4150.0 ;
+    END
+  END J10
+  PIN J2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 3650.0 2050.0 4150.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 3650.0 2050.0 4150.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 3650.0 2050.0 4150.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 3650.0 2050.0 4150.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 3650.0 2050.0 4150.0 ;
+    END
+  END J2
+  PIN J3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 3650.0 2850.0 4150.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 3650.0 2850.0 4150.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 3650.0 2850.0 4150.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 3650.0 2850.0 4150.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 3650.0 2850.0 4150.0 ;
+    END
+  END J3
+  PIN J4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 3650.0 3650.0 4150.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 3650.0 3650.0 4150.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 3650.0 3650.0 4150.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 3650.0 3650.0 4150.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 3650.0 3650.0 4150.0 ;
+    END
+  END J4
+  PIN J8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 3650.0 6850.0 4150.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 3650.0 6850.0 4150.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 3650.0 6850.0 4150.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 3650.0 6850.0 4150.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 3650.0 6850.0 4150.0 ;
+    END
+  END J8
+  PIN J9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 3650.0 7650.0 4150.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 3650.0 7650.0 4150.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 3650.0 7650.0 4150.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 3650.0 7650.0 4150.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 3650.0 7650.0 4150.0 ;
+    END
+  END J9
+  PIN K10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 2850.0 8450.0 3350.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 2850.0 8450.0 3350.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 2850.0 8450.0 3350.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 2850.0 8450.0 3350.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 2850.0 8450.0 3350.0 ;
+    END
+  END K10
+  PIN K2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 2850.0 2050.0 3350.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 2850.0 2050.0 3350.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 2850.0 2050.0 3350.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 2850.0 2050.0 3350.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 2850.0 2050.0 3350.0 ;
+    END
+  END K2
+  PIN K3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 2850.0 2850.0 3350.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 2850.0 2850.0 3350.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 2850.0 2850.0 3350.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 2850.0 2850.0 3350.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 2850.0 2850.0 3350.0 ;
+    END
+  END K3
+  PIN K4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 2850.0 3650.0 3350.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 2850.0 3650.0 3350.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 2850.0 3650.0 3350.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 2850.0 3650.0 3350.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 2850.0 3650.0 3350.0 ;
+    END
+  END K4
+  PIN K8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 2850.0 6850.0 3350.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 2850.0 6850.0 3350.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 2850.0 6850.0 3350.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 2850.0 6850.0 3350.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 2850.0 6850.0 3350.0 ;
+    END
+  END K8
+  PIN K9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 2850.0 7650.0 3350.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 2850.0 7650.0 3350.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 2850.0 7650.0 3350.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 2850.0 7650.0 3350.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 2850.0 7650.0 3350.0 ;
+    END
+  END K9
+  PIN L10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 2050.0 8450.0 2550.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 2050.0 8450.0 2550.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 2050.0 8450.0 2550.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 2050.0 8450.0 2550.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 2050.0 8450.0 2550.0 ;
+    END
+  END L10
+  PIN L2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 2050.0 2050.0 2550.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 2050.0 2050.0 2550.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 2050.0 2050.0 2550.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 2050.0 2050.0 2550.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 2050.0 2050.0 2550.0 ;
+    END
+  END L2
+  PIN L3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 2050.0 2850.0 2550.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 2050.0 2850.0 2550.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 2050.0 2850.0 2550.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 2050.0 2850.0 2550.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 2050.0 2850.0 2550.0 ;
+    END
+  END L3
+  PIN L4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 2050.0 3650.0 2550.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 2050.0 3650.0 2550.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 2050.0 3650.0 2550.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 2050.0 3650.0 2550.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 2050.0 3650.0 2550.0 ;
+    END
+  END L4
+  PIN L8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 2050.0 6850.0 2550.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 2050.0 6850.0 2550.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 2050.0 6850.0 2550.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 2050.0 6850.0 2550.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 2050.0 6850.0 2550.0 ;
+    END
+  END L8
+  PIN L9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 2050.0 7650.0 2550.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 2050.0 7650.0 2550.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 2050.0 7650.0 2550.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 2050.0 7650.0 2550.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 2050.0 7650.0 2550.0 ;
+    END
+  END L9
+  PIN M10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 1250.0 8450.0 1750.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 1250.0 8450.0 1750.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 1250.0 8450.0 1750.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 1250.0 8450.0 1750.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 1250.0 8450.0 1750.0 ;
+    END
+  END M10
+  PIN M2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 1250.0 2050.0 1750.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 1250.0 2050.0 1750.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 1250.0 2050.0 1750.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 1250.0 2050.0 1750.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 1250.0 2050.0 1750.0 ;
+    END
+  END M2
+  PIN M3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 1250.0 2850.0 1750.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 1250.0 2850.0 1750.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 1250.0 2850.0 1750.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 1250.0 2850.0 1750.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 1250.0 2850.0 1750.0 ;
+    END
+  END M3
+  PIN M4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 1250.0 3650.0 1750.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 1250.0 3650.0 1750.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 1250.0 3650.0 1750.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 1250.0 3650.0 1750.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 1250.0 3650.0 1750.0 ;
+    END
+  END M4
+  PIN M8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 1250.0 6850.0 1750.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 1250.0 6850.0 1750.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 1250.0 6850.0 1750.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 1250.0 6850.0 1750.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 1250.0 6850.0 1750.0 ;
+    END
+  END M8
+  PIN M9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 1250.0 7650.0 1750.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 1250.0 7650.0 1750.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 1250.0 7650.0 1750.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 1250.0 7650.0 1750.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 1250.0 7650.0 1750.0 ;
+    END
+  END M9
+  PIN N1
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  750.0 450.0 1250.0 950.0 ;
+      LAYER L3_v ;
+        RECT  750.0 450.0 1250.0 950.0 ;
+      LAYER L3_h ;
+        RECT  750.0 450.0 1250.0 950.0 ;
+      LAYER L5_v ;
+        RECT  750.0 450.0 1250.0 950.0 ;
+      LAYER L5_h ;
+        RECT  750.0 450.0 1250.0 950.0 ;
+    END
+  END N1
+  PIN N10
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7950.0 450.0 8450.0 950.0 ;
+      LAYER L3_v ;
+        RECT  7950.0 450.0 8450.0 950.0 ;
+      LAYER L3_h ;
+        RECT  7950.0 450.0 8450.0 950.0 ;
+      LAYER L5_v ;
+        RECT  7950.0 450.0 8450.0 950.0 ;
+      LAYER L5_h ;
+        RECT  7950.0 450.0 8450.0 950.0 ;
+    END
+  END N10
+  PIN N11
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  8750.0 450.0 9250.0 950.0 ;
+      LAYER L3_v ;
+        RECT  8750.0 450.0 9250.0 950.0 ;
+      LAYER L3_h ;
+        RECT  8750.0 450.0 9250.0 950.0 ;
+      LAYER L5_v ;
+        RECT  8750.0 450.0 9250.0 950.0 ;
+      LAYER L5_h ;
+        RECT  8750.0 450.0 9250.0 950.0 ;
+    END
+  END N11
+  PIN N2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  1550.0 450.0 2050.0 950.0 ;
+      LAYER L3_v ;
+        RECT  1550.0 450.0 2050.0 950.0 ;
+      LAYER L3_h ;
+        RECT  1550.0 450.0 2050.0 950.0 ;
+      LAYER L5_v ;
+        RECT  1550.0 450.0 2050.0 950.0 ;
+      LAYER L5_h ;
+        RECT  1550.0 450.0 2050.0 950.0 ;
+    END
+  END N2
+  PIN N3
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  2350.0 450.0 2850.0 950.0 ;
+      LAYER L3_v ;
+        RECT  2350.0 450.0 2850.0 950.0 ;
+      LAYER L3_h ;
+        RECT  2350.0 450.0 2850.0 950.0 ;
+      LAYER L5_v ;
+        RECT  2350.0 450.0 2850.0 950.0 ;
+      LAYER L5_h ;
+        RECT  2350.0 450.0 2850.0 950.0 ;
+    END
+  END N3
+  PIN N4
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  3150.0 450.0 3650.0 950.0 ;
+      LAYER L3_v ;
+        RECT  3150.0 450.0 3650.0 950.0 ;
+      LAYER L3_h ;
+        RECT  3150.0 450.0 3650.0 950.0 ;
+      LAYER L5_v ;
+        RECT  3150.0 450.0 3650.0 950.0 ;
+      LAYER L5_h ;
+        RECT  3150.0 450.0 3650.0 950.0 ;
+    END
+  END N4
+  PIN N8
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  6350.0 450.0 6850.0 950.0 ;
+      LAYER L3_v ;
+        RECT  6350.0 450.0 6850.0 950.0 ;
+      LAYER L3_h ;
+        RECT  6350.0 450.0 6850.0 950.0 ;
+      LAYER L5_v ;
+        RECT  6350.0 450.0 6850.0 950.0 ;
+      LAYER L5_h ;
+        RECT  6350.0 450.0 6850.0 950.0 ;
+    END
+  END N8
+  PIN N9
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER L1 ;
+        RECT  7150.0 450.0 7650.0 950.0 ;
+      LAYER L3_v ;
+        RECT  7150.0 450.0 7650.0 950.0 ;
+      LAYER L3_h ;
+        RECT  7150.0 450.0 7650.0 950.0 ;
+      LAYER L5_v ;
+        RECT  7150.0 450.0 7650.0 950.0 ;
+      LAYER L5_h ;
+        RECT  7150.0 450.0 7650.0 950.0 ;
+    END
+  END N9
+  OBS
+  END
+END ddr
+END LIBRARY

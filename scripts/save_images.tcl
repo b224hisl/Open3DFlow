@@ -1,14 +1,16 @@
+source $::env(SCRIPTS_DIR)/util.tcl
+
 gui::save_display_controls
 
 set height [[[ord::get_db_block] getBBox] getDY]
 set height [ord::dbu_to_microns $height]
 set resolution [expr $height / 1000]
 
-# Show the drc markers (if any)
-# if {[file exists $::env(REPORTS_DIR)/5_route_drc.rpt] == 1} {
-#     gui::load_drc $::env(REPORTS_DIR)/5_route_drc.rpt
+# set markerdb [[ord::get_db_block] findMarkerCategory DRC]
+# if {$markerdb != "NULL" && [$markerdb getMarkerCount] > 0} {
+#   gui::select_marker_category $markerdb
 # }
-
+              
 gui::clear_selections
 
 # Setup initial visibility to avoid any previous settings
@@ -20,7 +22,8 @@ gui::set_display_controls "Instances/StdCells/*" visible true
 gui::set_display_controls "Instances/Macro" visible true
 gui::set_display_controls "Instances/Pads/*" visible true
 gui::set_display_controls "Instances/Physical/*" visible true
-gui::set_display_controls "Pins" visible true
+gui::set_display_controls "Shape Types/Pins" visible true
+gui::set_display_controls "Shape Types/*/*" visible true
 gui::set_display_controls "Misc/Instances/names" visible true
 gui::set_display_controls "Misc/Scale bar" visible true
 gui::set_display_controls "Misc/Highlight selected" visible true
@@ -34,7 +37,7 @@ gui::set_display_controls "Layers/*" visible false
 gui::set_display_controls "Instances/Physical/*" visible false
 save_image -resolution $resolution $::env(REPORTS_DIR)/final_placement.webp
 
-if {[info exist ::env(PWR_NETS_VOLTAGES)]} {
+if {[env_var_exists_and_non_empty PWR_NETS_VOLTAGES]} {
   gui::set_display_controls "Heat Maps/IR Drop" visible true
   gui::set_heatmap IRDrop Layer $::env(IR_DROP_LAYER)
   gui::set_heatmap IRDrop ShowLegend 1
@@ -77,7 +80,8 @@ gui::clear_selections
 foreach clock [get_clocks *] {
   if { [llength [get_property $clock sources]] > 0 } {
     set clock_name [get_name $clock]
-    gui::save_clocktree_image $::env(REPORTS_DIR)/cts_$clock_name.webp $clock_name
+    save_clocktree_image -clock $clock_name \
+        $::env(REPORTS_DIR)/cts_$clock_name.webp
   }
 }
 

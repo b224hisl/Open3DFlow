@@ -1,7 +1,16 @@
 # layout out all cells in SC_LEF in a grid for viewing
 
 read_lef $::env(TECH_LEF)
-read_lef $::env(SC_LEF)
+if {[info exist ::env(PACKAGE)]} {
+    foreach lef $::env(ADDITIONAL_LEFS) {
+    read_lef $lef} 
+    } else {
+        read_lef $::env(SC_LEF)
+        if {[info exist ::env(ADDITIONAL_LEFS)]} {
+        foreach lef $::env(ADDITIONAL_LEFS) {
+            read_lef $lef }
+    }}
+
 
 # Create the block
 set db [ord::get_db]

@@ -1,10 +1,14 @@
 read_lef $::env(TECH_LEF)
-read_lef $::env(SC_LEF)
-if {[info exist ::env(ADDITIONAL_LEFS)]} {
-  foreach lef $::env(ADDITIONAL_LEFS) {
-    read_lef $lef
-  }
-}
+if {[info exist ::env(PACKAGE)]} {
+    foreach lef $::env(ADDITIONAL_LEFS) {
+    read_lef $lef} 
+    } else {
+        read_lef $::env(SC_LEF)
+        if {[info exist ::env(ADDITIONAL_LEFS)]} {
+        foreach lef $::env(ADDITIONAL_LEFS) {
+            read_lef $lef }
+    }
+    }
 
 # Read liberty files
 source $::env(SCRIPTS_DIR)/read_liberty.tcl

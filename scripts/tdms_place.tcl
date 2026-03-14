@@ -1,5 +1,5 @@
 source $::env(SCRIPTS_DIR)/load.tcl
-load_design 2_2_floorplan_io.odb 1_synth.sdc "Starting TDMS placement"
+erase_non_stage_variables floorplan
 
 proc find_macros {} {
   set macros ""
@@ -17,18 +17,21 @@ proc find_macros {} {
   return $macros
 }
 
-set_dont_use $::env(DONT_USE_CELLS)
+if {!([env_var_exists_and_non_empty MACRO_PLACEMENT] ||
+      [env_var_exists_and_non_empty MACRO_PLACEMENT_TCL]) &&
+    ![env_var_equals RTLMP_FLOW 1]} {
+  load_design 2_2_floorplan_io.odb 2_floorplan.sdc
 
-if {[find_macros] != ""} {
-  global_placement -density $::env(PLACE_DENSITY) \
-                 -pad_left $::env(CELL_PAD_IN_SITES_GLOBAL_PLACEMENT) \
-                 -pad_right $::env(CELL_PAD_IN_SITES_GLOBAL_PLACEMENT)
-} else {
-  puts "No macros found: Skipping global_placement"
-}
+  set_dont_use $::env(DONT_USE_CELLS)
 
-write_def $::env(RESULTS_DIR)/2_3_floorplan_tdms.def
-
-if {![info exists save_checkpoint] || $save_checkpoint} {
+  if {[find_macros] != ""} {
+    log_cmd global_placement -density $::env(PLACE_DENSITY) \
+                  -pad_left $::env(CELL_PAD_IN_SITES_GLOBAL_PLACEMENT) \
+                  -pad_right $::env(CELL_PAD_IN_SITES_GLOBAL_PLACEMENT)
+  } else {
+    puts "No macros found: Skipping global_placement"
+  }
   write_db $::env(RESULTS_DIR)/2_3_floorplan_tdms.odb
+} else {
+  log_cmd exec cp $::env(RESULTS_DIR)/2_2_floorplan_io.odb $::env(RESULTS_DIR)/2_3_floorplan_tdms.odb
 }

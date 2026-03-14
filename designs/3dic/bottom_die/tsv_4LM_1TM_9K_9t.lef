@@ -1,0 +1,8 @@
+MACRO tsv
+  CLASS core ;
+  FOREIGN tsv 0.0 0.0 ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE TSV_SITE ;
+  SIZE 30.24 BY 30.24 ;
+END tsv
