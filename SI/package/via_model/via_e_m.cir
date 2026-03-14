@@ -1,0 +1,26 @@
+* Via spice simulation
+C1 vi 0 43.220fF
+C2 vo 0 43.220fF
+* Series connection of L1 and R1: vi-n1 is connected to the inductor, and n1-vo is connected to the damping resistor.
+L1 vi n1 50.986pH
+* Series damping: suppress LC resonance and stabilize vo at high and low levels.
+R1 n1 vo 50Ω   
+
+* Vin vi 0 pulse(0 1 0 5p 5p 150p 312.5p)
+Vin vi 0 pulse(0V 1V 0 0 0 312.5ps)
+
+
+* Transient analysis - The corresponding period for 3.2GHz is 312.5 ps.
+.tran 0.5p 500p 0 0.5p
+.measure tran t_rise_vo TRIG v(vi) VAL=1.0 RISE=1 TARG v(vo) VAL=1.0 FALL=1
+
+
+.control
+run
+set color0 = white
+set color1 = black
+set xbrushwidth=4
+plot v(vi) v(vo)
+.endc
+
+.end0

@@ -1,0 +1,24 @@
+Using: /opt/cad/synopsys/installs/hspice_2hspice/P-2019.06-SP2-3/hspice/linux64/hspice quick.sp
+ ****** HSPICE -- P-2019.06-SP2-3 linux64 (Feb 11 2020) ******                  
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: quick.sp                                                          
+  Command line options: /opt/cad/synopsys/installs/hspice_2hspice/P-2019.06-SP2-3/hspice/linux64/hspice quick.sp
+  Start time: Thu Jan  8 16:26:01 2026
+ lic:  
+ lic: FLEXlm: SDK_12.3 
+ lic: USER:   yzhu                 HOSTNAME: server1 
+ lic: HOSTID: "34735a9e060d"       PID:      155433 
+ lic: User/host not on INCLUDE list for feature. Feature:       hspice License path:  1701@166.111.7
+ lic: Using FLEXlm license files: 
+ lic: 1701@166.111.78.2 
+ lic: Unable to checkout (hspice) 
+ lic:   
+           job total runtime         0.00 seconds
+
+
+ lic: total license checkout elapse time:        0.34(s)
