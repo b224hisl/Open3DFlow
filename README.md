@@ -129,7 +129,7 @@ stack up:
 # Contribute and Collaborate
 We welcome contributions from the community! Whether it's bug reports, feature requests, or even code contributions, your input is invaluable to the growth and success of this project. Feel free to open issues or submit pull requests on GitHub
 
-# Acknowledge
+# Some final remarks
 I would like to express my sincere gratitude to **Tsinghua University**, and **RIOS Lab** and our packaging partners for their tremendous support of my project.
 
 I am especially thankful to my advisor, **Professor Zhangxi Tan**, for his timely guidance and for providing the resources essential to this work.
