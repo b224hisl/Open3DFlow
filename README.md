@@ -54,6 +54,7 @@ The platform is designed to enable the implementation of advanced 3D stacked chi
 
 ### Open3DFlow Execution Flow
 The platform implements a seven‑stage workflow covering the entire RTL‑to‑GDSII design process for 3D ICs. Each stage is automated to ensure design correctness and manufacturability.
+
 ![Alt text](images/image-4.png)
 
 ### Toolchain Integration
